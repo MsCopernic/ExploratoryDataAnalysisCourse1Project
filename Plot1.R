@@ -4,16 +4,12 @@ Plot1 <- function(){
    # data types, filter and prepare a dataset to be used in all the ploting
    # generation in Plot1 to Plot4 R Programs
    
-   ## read data
-   
-   Source <- read_csv("./data/project.csv")
-
-   ## Create plot histogram of global active power
+   # Create plot histogram for Global_active_power
    
    png( "plot1.png", width=480, height=480)
    
-   hist( Source$Global_active_power, col="red", border="black", 
-        main ="Global Active Power", xlab="Global Active Power (kilowatts)", 
+   hist( SubSource$Global_active_power, col="red", border="black", 
+        main = "Global Active Power", xlab ="Global Active Power (kilowatts)", 
         ylab="Frequency")
    
    dev.off()
