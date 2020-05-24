@@ -17,7 +17,7 @@ Plot4 <- function() {
    lines(SubSource$DateTime, SubSource$Sub_metering_2,type = "l", col = "red")
    lines(SubSource$DateTime, SubSource$Sub_metering_3,type = "l", col = "blue")
 
-   legend("topright", lty = 1, col = c("black","red","blue"),
+   legend("topright", lty = 1, col = c("black","red","blue"), bty = "n",
           legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex = 0.6)
 
    with(SubSource, plot(DateTime, Global_reactive_power, type = "l", xlab = "DateTime", 
